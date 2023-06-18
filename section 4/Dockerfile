@@ -3,7 +3,7 @@ FROM node:alpine
 
 #install some dependencies
 COPY ./ ./
-# RUN npm install
+RUN npm install
 
 #default command
 CMD ["npm","install"]
