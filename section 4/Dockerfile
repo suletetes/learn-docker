@@ -4,6 +4,5 @@ FROM node:alpine
 #install some dependencies
 COPY ./ ./
 # RUN npm install
-RUN npm start
 #default command
-# CMD ["npm","install", "start"]
+CMD  npm start
