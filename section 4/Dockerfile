@@ -1,8 +1,7 @@
 #specify a base image
 
-FROM node:apline
+FROM node:16.20.0-alpine3.18
 #install some dependencies
-RUN 
 RUN npm install
 
 #default command
