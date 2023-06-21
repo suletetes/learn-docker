@@ -9,3 +9,12 @@ services:
     volumes:
       - /app/node_modules
       - .:/app
+  test:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    ports:
+      - 3000:3000
+    volumes:
+      - /app/node_modules
+      - .:/app
