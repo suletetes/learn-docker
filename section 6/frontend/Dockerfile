@@ -1,4 +1,2 @@
-FROM ubuntu:latest
-LABEL authors="gitpod"
+FROM node:16-apline  as builder
 
-ENTRYPOINT ["top", "-b"]
