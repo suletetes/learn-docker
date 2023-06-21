@@ -1,0 +1,7 @@
+sudo: required
+services:
+  - docker
+before_install:
+  - docker build -t suletete/docker-kube -f Dockerfile.dev .
+script:
+  - docker run suletete/docker-kube npm run test -- --coverage
