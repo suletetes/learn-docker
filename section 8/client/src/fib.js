@@ -24,7 +24,9 @@ class fib extends Component {
             seenIndexes: seenIndexes.data
         })
     }
-
+    renderSeenIndexes(){
+        return this.state.seenIndexes.map(({number}) => number)
+}
     render() {
         return (
             <div>
@@ -33,6 +35,8 @@ class fib extends Component {
                     <input/>
                     <button>Submit</button>
                 </form>
+                <h3>Indexes i have seen:</h3>
+                {this.renderSeenIndexes()}
             </div>
         )
     }
