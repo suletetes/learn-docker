@@ -7,5 +7,8 @@
     "cors": "^2.8.5",
     "nodemon": "^2.0.22"
   },
-  
+  "scripts": {
+    "dev": "nodemon",
+    "start": "node index.js"
+  }
 }
