@@ -24,12 +24,18 @@ class fib extends Component {
             seenIndexes: seenIndexes.data
         })
     }
-    renderSeenIndexes(){
-        return this.state.seenIndexes.map(({number}) => number)
-}
+
+    renderSeenIndexes() {
+        return this.state.seenIndexes.map(({number}) => number).join(', ')
+    }
+
+    renderValues() {
+        
+    }
+
     render() {
         return (
-            <div>
+            <dv>
                 <form>
                     <label>Enter your index:</label>
                     <input/>
@@ -37,7 +43,10 @@ class fib extends Component {
                 </form>
                 <h3>Indexes i have seen:</h3>
                 {this.renderSeenIndexes()}
-            </div>
+                <h3>Calculated values:</h3>
+                {this.renderValues()}
+
+            </dv>
         )
     }
 }
