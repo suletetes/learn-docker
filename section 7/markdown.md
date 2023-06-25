@@ -1,1 +1,0 @@
-section 7 continuous integration and deployment with AWS 
