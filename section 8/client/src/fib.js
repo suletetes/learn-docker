@@ -21,4 +21,11 @@ class fib extends Component{
             seenIndexes: seenIndexes.data
         })
     }
+    render() {
+        return(
+            <div>
+                
+            </div>
+        )
+    }
 }
