@@ -7,6 +7,7 @@ import fib from "./fib";
 
 function App() {
   return (
+      <Router>
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -22,7 +23,12 @@ function App() {
           Learn React
         </a>
       </header>
+      <div>
+        <Route exact path={"/"} component={fib}/>
+        <Route exact path={"/otherpage"} component={otherPage()}/>
+      </div>
     </div>
+      </Router>
   );
 }
 
