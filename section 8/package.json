@@ -2,5 +2,9 @@
   "dependencies": {
     "nodemon": "^2.0.22",
     "redis": "2.8.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon"
   }
 }
