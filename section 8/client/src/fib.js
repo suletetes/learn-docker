@@ -15,4 +15,10 @@ class fib extends Component{
         const values = await axios.get('/api/values/current')
         this.setState({values: values.data})
     }
+    async fetctIndexes (){
+        const seenIndexes = await axios.get('/api/values/current')
+        this.setState({
+            seenIndexes: seenIndexes.data
+        })
+    }
 }
