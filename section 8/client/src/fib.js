@@ -18,7 +18,7 @@ class fib extends Component {
         this.setState({values: values.data})
     }
 
-    async fetctIndexes() {
+    async fetchIndexes() {
         const seenIndexes = await axios.get('/api/values/current')
         this.setState({
             seenIndexes: seenIndexes.data
@@ -50,7 +50,7 @@ class fib extends Component {
 
     render() {
         return (
-            <dv>
+            <div>
                 <form onSubmit={this.handleSubmit}>
                     <label>Enter your index:</label>
                     <input
@@ -64,7 +64,8 @@ class fib extends Component {
                 <h3>Calculated values:</h3>
                 {this.renderValues()}
 
-            </dv>
+            </div>
         )
     }
 }
+export default fib
