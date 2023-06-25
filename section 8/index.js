@@ -18,3 +18,4 @@ sub.on('message', (channel, message)=>{
 redisClient.hset('Values', message, fib(parseInt(message)))
 
 })
+sub.subcribe('insert')
