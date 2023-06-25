@@ -1,6 +1,6 @@
 {
-  "name": "section 8",
-  "version": "1.0.0",
   "dependencies": {
+    "nodemon": "^2.0.22",
+    "redis": "2.8.0"
   }
 }
