@@ -1,34 +1,37 @@
-import React,{Component} from "react";
+import React, {Component} from "react";
 import axios from 'axios';
 
-class fib extends Component{
+class fib extends Component {
     state = {
-        seenIndexes:[],
-        values:{},
-        index:''
+        seenIndexes: [],
+        values: {},
+        index: ''
     }
+
     componentDidMount() {
         this.fetchValues()
         this.fetchIndexes()
     }
-    async fetchValues(){
+
+    async fetchValues() {
         const values = await axios.get('/api/values/current')
         this.setState({values: values.data})
     }
-    async fetctIndexes (){
+
+    async fetctIndexes() {
         const seenIndexes = await axios.get('/api/values/current')
         this.setState({
             seenIndexes: seenIndexes.data
         })
     }
+
     render() {
-        return(
+        return (
             <div>
                 <form>
-                    <label>
-                        <input/>
-                        <button>Submit</button>
-                    </label>
+                    <label>Enter your index:</label>
+                    <input/>
+                    <button>Submit</button>
                 </form>
             </div>
         )
