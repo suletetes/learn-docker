@@ -23,3 +23,5 @@ const pgClient = new pool({
 })
 
 pgClient.on('error', () => console.log('Lost PG connection'))
+
+pgClient.query("Create table if not exists values (number INT)")
