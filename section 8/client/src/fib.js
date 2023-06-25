@@ -24,7 +24,12 @@ class fib extends Component{
     render() {
         return(
             <div>
-                
+                <form>
+                    <label>
+                        <input/>
+                        <button>Submit</button>
+                    </label>
+                </form>
             </div>
         )
     }
