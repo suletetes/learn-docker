@@ -1,4 +1,4 @@
-const keys = reuire('./keys')
+const keys = require('./keys')
 
 // express apps setup
 
@@ -13,12 +13,12 @@ app.use(bodyParser.json())
 
 // postgres client setup
 
-const {pool} = require('pg')
-const pgClient = new pool({
+const {Pool} = require('pg')
+const pgClient = new Pool({
     user: keys.pgUser,
     host: keys.pgHost,
     database: keys.pgDatabase,
-    password: key.pgPassword,
+    password: keys.pgPassword,
     port: keys.pgPort
 })
 
