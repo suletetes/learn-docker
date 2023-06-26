@@ -19,5 +19,5 @@ services:
       - PGUSER=postgres
       - PGHOST=postgres
       - PGDATABASE=postgres
-      - PGPASSWORD=your_password_here
+      - PGPASSWORD='0809'
       - PGPORT=5432
