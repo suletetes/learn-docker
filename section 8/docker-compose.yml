@@ -6,7 +6,8 @@ services:
       - POSTGRES_PASSWORD='0809'
   redis:
     image: 'redis:latest'
-  ngnix:
+  nginx:
+    image: 'nginx:latest'
     restart: always
     build:
       dockerfile: Dockerfile.dev
