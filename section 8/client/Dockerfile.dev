@@ -1,4 +1,6 @@
-FROM ubuntu:latest
-LABEL authors="gitpod"
+FROM node:alpine
+WORKDIR '/app'
 
-ENTRYPOINT ["top", "-b"]
+COPY ./package.json ./
+COPY . .
+CMD["npm", "run", "start"]
