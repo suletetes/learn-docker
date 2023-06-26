@@ -3,7 +3,7 @@ services:
   postgres:
     image: 'postgres:latest'
   redis:
-      image: 'redis:latest'
+    image: 'redis:latest'
   server:
     build:
       dockerfile: Dockerfile.dev
@@ -11,3 +11,6 @@ services:
     volumes:
       - /app/node_modules
       - ./server:/app
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=
