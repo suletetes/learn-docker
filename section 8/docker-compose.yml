@@ -7,7 +7,7 @@ services:
   redis:
     image: 'redis:latest'
   nginx:
-    image: 'nginx:latest'
+#    image: 'nginx:latest'
     restart: always
     build:
       dockerfile: Dockerfile.dev
