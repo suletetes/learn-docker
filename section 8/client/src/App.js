@@ -3,8 +3,8 @@ import './App.css';
 import { BrowserRouter as Router,Routes, Route, Link} from 'react-router-dom'
 // import {Route}
 import React,{Component} from "react";
-import otherPage from "./otherPage";
-import fib from "./fib";
+import OtherPage from "./OtherPage";
+import Fib from "./Fib";
 
 function App() {
   return (
@@ -27,8 +27,8 @@ function App() {
         <Link to="/otherpage">Other Page</Link>
       </header>
       <Routes>
-        <Route exact path="/" component={<fib />}/>
-        <Route  path="/otherpage" component={<otherPage />}/>
+        <Route exact path="/" component={Fib }/>
+        <Route  path="/otherpage" component={OtherPage }/>
       </Routes>
     </div>
       </Router>
