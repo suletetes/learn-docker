@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import { BrowserRouter as Router, Route, Link} from 'react-router-dom'
+import { BrowserRouter as Router,Routes, Route, Link} from 'react-router-dom'
 // import {Route}
 import React,{Component} from "react";
 import otherPage from "./otherPage";
@@ -23,13 +23,13 @@ function App() {
         >
           Learn React
         </a>
-        <Link to={"/"}>Home</Link>
-        <Link to={"/otherpage"}>Other Page</Link>
+        <Link to="/">Home</Link>
+        <Link to="/otherpage">Other Page</Link>
       </header>
-      <div>
-        {/* <Route exact path={"/"} component={fib}/>
-        <Route exact path={"/otherpage"} component={otherPage()}/> */}
-      </div>
+      <Routes>
+        <Route exact path="/" component={<fib />}/>
+        <Route  path="/otherpage" component={<otherPage />}/>
+      </Routes>
     </div>
       </Router>
   );
