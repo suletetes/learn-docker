@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route, Link} from 'react-router-dom'
+// import {Route}
 import React,{Component} from "react";
 import otherPage from "./otherPage";
 import fib from "./fib";
@@ -26,8 +27,8 @@ function App() {
         <Link to={"/otherpage"}>Other Page</Link>
       </header>
       <div>
-        {/*<Route exact path={"/"} component={fib}/>*/}
-        {/*<Route exact path={"/otherpage"} component={otherPage()}/>*/}
+        {/* <Route exact path={"/"} component={fib}/>
+        <Route exact path={"/otherpage"} component={otherPage()}/> */}
       </div>
     </div>
       </Router>
