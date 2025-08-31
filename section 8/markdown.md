@@ -1,1 +1,0 @@
-section 8 building a multi-container application
